@@ -97,6 +97,8 @@ body {
 /* .option.selected,  */
 .option.selected .option-inner {
   background-color: rgb(var(--orange));
+  border-left: 2px solid rgb(var(--orange));
+  border-right: 2px solid rgb(var(--orange));
 }
 
 .option.selected .option-inner::before {
@@ -110,6 +112,8 @@ body {
 /* .option.answer,  */
 .option.answer .option-inner {
   background-color: rgb(var(--green));
+  border-left: 2px solid rgb(var(--green));
+  border-right: 2px solid rgb(var(--green));
   /* animation when answer is correct */
 }
 
@@ -124,8 +128,8 @@ body {
 /* .option.wrong,  */
 .option.wrong .option-inner {
   background-color: rgb(var(--red));
-  /* border-left: 2px solid rgb(var(--red));
-  border-right: 2px solid rgb(var(--red)); */
+  border-left: 2px solid rgb(var(--red));
+  border-right: 2px solid rgb(var(--red));
   /* animation when selected option is wrong */
 }
 
@@ -142,6 +146,8 @@ body {
   position: relative;
   height: calc(100% - 8px);
   background-color: rgb(var(--options-inner-bg));
+  border-left: 1px solid rgb(var(--options-inner-bg));
+  border-right: 1px solid rgb(var(--options-inner-bg));
 }
 
 .option-inner::before {
@@ -173,6 +179,8 @@ body {
   height: 100px;
   position: relative;
   z-index: 5;
+  border-left: 1px solid rgb(var(--options-inner-bg));
+  border-right: 1px solid rgb(var(--options-inner-bg));
 }
 
 .question::before {
@@ -203,6 +211,8 @@ body {
   position: relative;
   height: calc(100% - 8px);
   background-color: rgb(var(--options-inner-bg));
+  border-left: 2px solid rgb(var(--options-inner-bg));
+  border-right: 2px solid rgb(var(--options-inner-bg));
 }
 
 .question-inner::before {

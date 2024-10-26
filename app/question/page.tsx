@@ -5,9 +5,9 @@ import PriceBlock from "./components/PriceBlock";
 
 export default function QuestionsPage() {
   return (
-    <main className="h-screen max-h-screen flex flex-col blue-bg">
+    <main className="lg:h-screen lg:max-h-screen flex flex-col blue-bg">
       <div className="h-full flex">
-        <div className="h-full flex flex-col w-full">
+        <div className="lg:h-full flex flex-col w-full">
           <AdBlock />
           <OptionsBlock />
         </div>

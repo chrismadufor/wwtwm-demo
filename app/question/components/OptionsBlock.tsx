@@ -44,7 +44,7 @@ export default function OptionsBlock() {
         <div className="line questionLine"></div>
       </div>
       <div className="relative mt-5">
-        <div className="shape-wrap max-w-7xl mx-auto grid grid-cols-2 gap-5 w-full">
+        <div className="shape-wrap max-w-7xl mx-auto grid md:grid-cols-2 gap-5 w-full">
           {currentQuestion.options.map((option, index) => (
             <Option
               key={index}

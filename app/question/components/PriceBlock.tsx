@@ -22,7 +22,7 @@ export default function PriceBlock() {
   }, [progress]);
 
   return (
-    <div className="h-full flex flex-col border-l w-64">
+    <div className="hidden lg:flex h-full flex-col border-l w-64">
       <h1 className="text-3xl py-3 text-center border-b font-semibold">
         Shelta
       </h1>
