@@ -56,8 +56,8 @@ export default function Option({ idx, letter, value, answer, nextBest, onSelect 
       <div className={`option bg-white flex items-center ${isClicked && "selected"} ${isAnswer && "answer"} ${isWrong && "wrong"}`}>
         <div className="text-2xl option-inner w-full h-full flex items-center">
           <div className={`opacity-0 flex items-center ${showOptions ? `option-${idx}` : ""} `}>
-          <span className="mr-2">{letter}.</span>
-          <span className="">{getValue(value)}</span>
+          <span className="mr-2 text-white">{letter}.</span>
+          <span className=" text-white">{getValue(value)}</span>
           </div>
         </div>
       </div>

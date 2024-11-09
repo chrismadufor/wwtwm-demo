@@ -80,7 +80,7 @@ export default function AdminPanel() {
     <div className="h-20 w-full px-10 flex items-center gap-3">
       <button
         onClick={onCheckAnswer}
-        className={`px-5 py-2 text-sm cursor-pointer green-bg uppercase font-semibold ${
+        className={`px-5 py-2 text-white text-sm cursor-pointer green-bg uppercase font-semibold ${
           (showOptions && selectedOption === null) || showAnswer ? disableElement : ""
         }`}
       >
@@ -90,7 +90,7 @@ export default function AdminPanel() {
         {showOptions && !selectedOption && progress > 0 && (
           <button
             onClick={onWalkAway}
-            className={`px-5 py-2 text-sm cursor-pointer orange-bg uppercase font-semibold ${
+            className={`px-5 py-2 text-white text-sm cursor-pointer orange-bg uppercase font-semibold ${
               walkaway && disableElement
             }`}
           >
@@ -100,7 +100,7 @@ export default function AdminPanel() {
         {(showAnswer || walkaway) && (
           <button
             onClick={onNextStep}
-            className={`px-5 py-2 text-sm cursor-pointer orange-bg text-white uppercase font-semibold ${
+            className={`px-5 py-2 text-white text-sm cursor-pointer orange-bg uppercase font-semibold ${
               !showOptions && disableElement
             }`}
           >

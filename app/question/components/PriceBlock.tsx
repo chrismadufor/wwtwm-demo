@@ -24,17 +24,17 @@ export default function PriceBlock() {
   return (
     <div className="hidden lg:flex h-full flex-col border-l w-64">
       <h1 className="text-3xl py-3 text-center border-b font-semibold">
-        Shelta
+        WWTBAM
       </h1>
       <div className="h-full grid grid-cols-1">
         {prices.map((price, index) => (
           <p
-            className={`font-semibold flex items-center text-3xl pl-5 ${
+            className={`font-semibold flex items-center text-3xl pl-5 text-white ${
               isGuaranteed(index) ? "orange" : ""
             } ${index === currentVal ? "orange-bg" : ""}`}
             key={index}
           >
-            <span className="mr-2">{10 - index}.</span>₦{price}
+            <span className="mr-2 text-white">{10 - index}.</span>₦{price}
           </p>
         ))}
       </div>

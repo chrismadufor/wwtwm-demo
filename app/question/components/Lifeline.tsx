@@ -47,7 +47,7 @@ export default function Lifeline() {
           usedFiftyFifty && disableElement
         }`}
       >
-        <span className="text-3xl font-semibold">50:50</span>
+        <span className="text-3xl font-semibold text-white">50:50</span>
       </div>
       <div
         onClick={onUseAskHost}
@@ -55,7 +55,7 @@ export default function Lifeline() {
           usedAskHost && disableElement
         }`}
       >
-        <FontAwesomeIcon icon={faUserTie} size="4x" />
+        <FontAwesomeIcon icon={faUserTie} size="4x" color="white" />
       </div>
       <div
         onClick={onUseAskFriend}
@@ -63,7 +63,7 @@ export default function Lifeline() {
           usedAskFriend && disableElement
         }`}
       >
-        <FontAwesomeIcon icon={faPhone} size="3x" />
+        <FontAwesomeIcon icon={faPhone} size="3x" color="white" />
       </div>
     </div>
   );
